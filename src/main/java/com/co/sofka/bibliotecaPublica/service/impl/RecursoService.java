@@ -58,7 +58,7 @@ public class RecursoService implements IRecursoService {
         if(!recurso.isEstado()){
             return "El reccurso no se encuentra disponible en el momento y la fecha del prestamo del ejemplar fue: " + recurso.getFechaDePrestamo();
         }
-        return "El reccurso se encuentra disponible";
+        return "El recurso se encuentra disponible";
     }
 
     @Override

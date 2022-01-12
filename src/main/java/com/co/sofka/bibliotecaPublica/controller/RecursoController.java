@@ -48,12 +48,12 @@ public class RecursoController {
         return new ResponseEntity(iRecursoService.consultarDisponibilidad(id), HttpStatus.OK);
     }
 
-    @GetMapping("/recursos/prestarRecurso/{id}")
+    @PutMapping("/recursos/prestarRecurso/{id}")
     public ResponseEntity<RecursoDTO> prestarRecurso(@PathVariable("id") String id){
         return new ResponseEntity(iRecursoService.prestarRecurso(id), HttpStatus.OK);
     }
 
-    @GetMapping("/recursos/devolverRecurso/{id}")
+    @PutMapping("/recursos/devolverRecurso/{id}")
     public ResponseEntity<RecursoDTO> devolverRecurso(@PathVariable("id") String id){
         return new ResponseEntity(iRecursoService.devolverRecurso(id), HttpStatus.OK);
     }
